@@ -1,34 +1,20 @@
-import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        revenueFromSale();
+        largestNumberOfArray();
     }
 
-    public static void revenueFromSale() {
+    public static void largestNumberOfArray() {
 
-        System.out.println("Enter unit price: ");
+        int[] arr = {50, 15, 30, 5, 95, 200, 52};
 
-        Scanner scanInput = new Scanner(System.in);
-
-        float unitPrice = scanInput.nextFloat();
-
-        System.out.println("Enter the desired quantity: ");
-
-        float unitQty = scanInput.nextFloat();
-
-        float revenue = unitPrice * unitQty;
-
-            if (unitQty < 100) {
-                System.out.println("The revenue from sale: " + revenue + "$");
-                System.out.println("Discount: 0.00$(0.0%)");
-            } else if (unitQty > 120) {
-                System.out.println("The revenue from sale: " + (revenue - (revenue * 0.20)) + "$");
-                System.out.println("Discount: " + (revenue * 0.20) + "$(20.0%");
-            } else {
-                System.out.println("The revenue from sale: " + (revenue - (revenue * 0.15)) + "$");
-                System.out.println("Discount: " + (revenue * 0.15) + "$(15.0%)");
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
 
+        }
+        System.out.println(max);
     }
 }
