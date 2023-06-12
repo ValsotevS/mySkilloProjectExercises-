@@ -2,39 +2,40 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    triangleByVortex();
+        daysOfTheWeek();
     }
-    public static void triangleByVortex () {
 
-        System.out.println("Input the 'a' vertex of the triangle: ");
+    public static void daysOfTheWeek() {
+        System.out.println("Input day of the week: ");
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scanDay = new Scanner(System.in);
+        int weekDay = scanDay.nextInt();
 
-        double vertexA = scan.nextDouble();
-
-        System.out.println("Input the 'b' vertex of the triangle: ");
-
-        double vertexB = scan.nextDouble();
-
-        System.out.println("Input the 'c' vertex of the triangle: ");
-
-        double vertexC = scan.nextDouble();
-
-        double vertexSum = vertexA + vertexB + vertexC;
-
-        if (vertexSum == 180) {
-            System.out.println("The triangle is valid!");
-        } else {
-            System.out.println("The triangle is NOT valid!");
-            return;
-        }
-
-        if (vertexA == 90 || vertexB == 90 || vertexC == 90) {
-            System.out.println("The triangle is 'Right angled'.");
-        } else if (vertexA > 90 || vertexB > 90 || vertexC > 90) {
-            System.out.println("The triangle is 'Obtuse triangle'.");
-        } else if (vertexA < 90 || vertexB < 90 || vertexC < 90) {
-            System.out.println("The triangle is 'Acute triangle'.");
+        switch (weekDay) {
+            case 1:
+                System.out.println("The " + weekDay + "st day of the week is Monday!");
+                break;
+            case 2:
+                System.out.println("The " + weekDay + "nd day of the week is Tuesday!");
+                break;
+            case 3:
+                System.out.println("The " + weekDay + "rd day of the week is Wednesday!");
+                break;
+            case 4:
+                System.out.println("The " + weekDay + "th day of the week is Thursday!");
+                break;
+            case 5:
+                System.out.println("The " + weekDay + "th day of the week is Friday!");
+                break;
+            case 6:
+                System.out.println("The " + weekDay + "th day of the week is Saturday!");
+                break;
+            case 7:
+                System.out.println("The " + weekDay + "th day of the week is Sunday!");
+                break;
+            default:
+                System.out.println("Input NOT valid. There is no such day of the Week");
+                break;
         }
     }
 }
