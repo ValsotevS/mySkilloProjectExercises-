@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] arrg) {
+    public static void main(String[] args) {
     triangleByVortex();
     }
     public static void triangleByVortex () {
