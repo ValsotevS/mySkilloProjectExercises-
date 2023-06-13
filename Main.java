@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] arrg) {
     triangleByVortex();
     }
     public static void triangleByVortex () {
@@ -33,7 +33,7 @@ public class Main {
             System.out.println("The triangle is 'Right angled'.");
         } else if (vortexA > 90 || vortexB > 90 || vortexC > 90) {
             System.out.println("The triangle is 'Obtuse triangle'.");
-        } else if (vortexA < 90 || vortexB < 90 || vortexC < 90) {
+        } else if (vortexA < 90 && vortexB < 90 && vortexC < 90) {
             System.out.println("The triangle is 'Acute triangle'.");
         }
         }
