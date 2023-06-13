@@ -1,18 +1,20 @@
 public class Main {
 
     public static void main(String[] args) {
-        numbersDivisibleBy5();
+        reverseList();
     }
 
-    public static void numbersDivisibleBy5() {
+    public static void reverseList() {
 
-        int[] arr = {12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200};
-        for( int i = 0; i < arr.length; i++) {
-            if ((arr[i] % 5) == 0 && (arr[i] <= 150)) {
-                System.out.println(arr[i]);
-            }
+        int[] myList = {10, 20, 30, 40, 50};
+
+        for (int i = myList.length - 1; i >= 0; i--){
+            System.out.println(myList[i]);
         }
-
-
+        }
     }
-}
+
+
+
+
+
