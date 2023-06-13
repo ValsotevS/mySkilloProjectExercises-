@@ -10,31 +10,31 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        double vertexA = scan.nextDouble();
+        double vortexA = scan.nextDouble();
 
         System.out.println("Input the 'b' vertex of the triangle: ");
 
-        double vertexB = scan.nextDouble();
+        double vortexB = scan.nextDouble();
 
         System.out.println("Input the 'c' vertex of the triangle: ");
 
-        double vertexC = scan.nextDouble();
+        double vortexC = scan.nextDouble();
 
-        double vertexSum = vertexA + vertexB + vertexC;
+        double vortexSum = vortexA + vortexB + vortexC;
 
-        if (vertexSum == 180) {
+        if (vortexSum == 180) {
             System.out.println("The triangle is valid!");
         } else {
             System.out.println("The triangle is NOT valid!");
             return;
         }
 
-        if (vertexA == 90 || vertexB == 90 || vertexC == 90) {
+        if (vortexA == 90 || vortexB == 90 || vortexC == 90) {
             System.out.println("The triangle is 'Right angled'.");
-        } else if (vertexA > 90 || vertexB > 90 || vertexC > 90) {
+        } else if (vortexA > 90 || vortexB > 90 || vortexC > 90) {
             System.out.println("The triangle is 'Obtuse triangle'.");
-        } else if (vertexA < 90 || vertexB < 90 || vertexC < 90) {
+        } else if (vortexA < 90 || vortexB < 90 || vortexC < 90) {
             System.out.println("The triangle is 'Acute triangle'.");
         }
+        }
     }
-}
